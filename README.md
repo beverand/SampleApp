@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 The project is deployed here: https://silver-raindrop-9c2aa0.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4c39b9bf-73b3-4de4-aabc-5be5781a3a8e/deploy-status)](https://app.netlify.com/sites/silver-raindrop-9c2aa0/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
