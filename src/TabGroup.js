@@ -40,7 +40,7 @@ function TabGroup(props) {
           <p>Error: {props.error.message}</p>
         ) : (
           <p>{props.data.map((q, idx) => 
-            <p key={idx}>{idx+1}. {q.qtype} - {q.question? q.question: q._id}</p>
+            <p key={idx}>{idx+1}. {q.qtype} {q.question? ' - '+q.question: q._id}</p>
             )}</p>
         )}
       </>
