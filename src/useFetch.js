@@ -22,7 +22,6 @@ const useFetch = (url) => {
          setError(err); // set error to err when error occurs 
        });
    }, [url]); 
-   console.log(data)
    return { data, loading, error }; 
 
 };

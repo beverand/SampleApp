@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TabGroup from "./TabGroup"; // import presentational component
 import useFetch from "./useFetch"; // import custom hook
+const SERVER_URL = process.env.REACT_APP_SERVER_URL || 'https://joyous-moth-long-johns.cyclic.app';
 
 function TabContainer(props) {
   const [active, setActive] = useState(props.tabs[0].id); // start with the first tab
@@ -13,10 +14,10 @@ function TabContainer(props) {
 
    // find the tab object that matches the active tab id
    const activeTab = props.tabs.find((tab) => tab.id === active);
-
+ 
    // use custom hook to fetch data based on active tab data property
    const { data, loading, error } = useFetch(
-     `https://joyous-moth-long-johns.cyclic.app${activeTab.data}` // access data property using dot notation
+     SERVER_URL+activeTab.data // access data property using dot notation
      // or `https://example.com/api${activeTab["data"]}` // access data property using bracket notation
    );
 
